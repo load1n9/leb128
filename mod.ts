@@ -56,7 +56,7 @@ export class Unsigned {
     Unsigned.write(num, stream);
     return stream.buffer;
   }
-  static(buffer: Buffer): string {
+  static decode(buffer: Buffer): string {
     return Unsigned.read(new MockStream(buffer))!;
   }
 }
